@@ -1,0 +1,86 @@
+:root {
+  --bg: #ffffff;
+  --text: #000000;
+  --accent: #0077cc;
+  --secondary: #00cc66;
+}
+
+body.dark {
+  --bg: #121212;
+  --text: #ffffff;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: var(--bg);
+  color: var(--text);
+  padding: 1rem;
+  transition: background 0.3s, color 0.3s;
+}
+
+.logo {
+  width: 80px;
+  margin-bottom: 0.5rem;
+}
+
+.header-buttons {
+  margin: 1rem 0;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.header-buttons button {
+  padding: 8px 12px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  border-radius: 8px;
+  border: none;
+  background-color: var(--accent);
+  color: white;
+}
+
+.button-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 20px;
+}
+
+.sound-item {
+  text-align: center;
+}
+
+.sound-button {
+  background-image: url('button-sound.png');
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  aspect-ratio: 1/1;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+.sound-item p {
+  margin: 0.5rem 0 0.2rem;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.sound-actions {
+  display: flex;
+  justify-content: center;
+  gap: 6px;
+  margin-top: 0.3rem;
+}
+
+.sound-actions button {
+  font-size: 0.8rem;
+  border: none;
+  border-radius: 6px;
+  padding: 4px 6px;
+  cursor: pointer;
+  background-color: var(--secondary);
+  color: white;
+}
